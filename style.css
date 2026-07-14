@@ -1,0 +1,1982 @@
+/* ===========================
+   LEY.ZIP
+   Global Styles
+=========================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Space Grotesk',sans-serif;
+
+background:#050505;
+
+color:white;
+
+overflow-x:hidden;
+
+}
+
+/* ===========================
+   POLKA DOT BACKGROUND
+=========================== */
+
+.dots{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background-image:
+radial-gradient(white 1.2px, transparent 1.2px);
+
+background-size:28px 28px;
+
+opacity:.08;
+
+z-index:-3;
+
+}
+
+/* ===========================
+   STRIPES
+=========================== */
+
+.grid{
+
+position:fixed;
+
+inset:0;
+
+background:
+
+repeating-linear-gradient(
+
+-45deg,
+
+transparent 0px,
+
+transparent 32px,
+
+rgba(255,255,255,.04) 32px,
+
+rgba(255,255,255,.04) 34px
+
+);
+
+z-index:-2;
+
+}
+
+/* ===========================
+   VHS GRAIN
+=========================== */
+
+body::after{
+
+content:"";
+
+position:fixed;
+
+inset:0;
+
+background-image:url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+
+opacity:.18;
+
+pointer-events:none;
+
+z-index:-1;
+
+}
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+
+position:fixed;
+
+top:20px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+width:92%;
+
+max-width:1300px;
+
+padding:16px 28px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(20px);
+
+border:1px solid rgba(255,255,255,.18);
+
+border-radius:22px;
+
+z-index:999;
+
+box-shadow:
+
+0 0 25px rgba(255,255,255,.08);
+
+}
+
+/* ===========================
+   LOGO
+=========================== */
+
+.logo{
+
+font-size:26px;
+
+font-weight:800;
+
+letter-spacing:8px;
+
+font-family:'Syne',sans-serif;
+
+cursor:default;
+
+}
+
+
+/* ===========================
+   NAVIGATION
+=========================== */
+
+nav{
+
+display:flex;
+
+gap:14px;
+
+flex-wrap:wrap;
+
+}
+
+nav a{
+
+text-decoration:none;
+
+color:white;
+
+font-size:14px;
+
+padding:10px 18px;
+
+border-radius:999px;
+
+border:1px solid rgba(255,255,255,.18);
+
+background:rgba(255,255,255,.04);
+
+transition:.35s;
+
+letter-spacing:2px;
+
+}
+
+
+/* Hover */
+
+nav a:hover{
+
+background:white;
+
+color:black;
+
+transform:translateY(-3px);
+
+box-shadow:
+
+0 0 18px rgba(255,255,255,.35);
+
+}
+
+
+/* Active Click */
+
+nav a:active{
+
+transform:scale(.95);
+
+}
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:140px 20px 80px;
+
+}
+
+
+/* ===========================
+   WINDOW
+=========================== */
+
+.window{
+
+width:100%;
+
+max-width:900px;
+
+background:rgba(255,255,255,.06);
+
+backdrop-filter:blur(18px);
+
+border:1px solid rgba(255,255,255,.18);
+
+border-radius:24px;
+
+overflow:hidden;
+
+box-shadow:
+
+0 0 40px rgba(255,255,255,.08);
+
+}
+
+
+/* ===========================
+   WINDOW BAR
+=========================== */
+
+.window-bar{
+
+height:52px;
+
+display:flex;
+
+align-items:center;
+
+gap:12px;
+
+padding-left:24px;
+
+background:rgba(255,255,255,.08);
+
+border-bottom:1px solid rgba(255,255,255,.15);
+
+}
+
+.window-bar span{
+
+width:13px;
+
+height:13px;
+
+border-radius:50%;
+
+background:white;
+
+opacity:.75;
+
+}
+
+
+/* ===========================
+   CONTENT
+=========================== */
+
+.window-content{
+
+padding:70px 45px;
+
+text-align:center;
+
+}
+/* ===========================
+   TYPOGRAPHY
+=========================== */
+
+.mini{
+
+font-size:13px;
+
+letter-spacing:7px;
+
+opacity:.6;
+
+margin-bottom:18px;
+
+}
+
+.window-content h1{
+
+font-size:92px;
+
+font-family:'Syne',sans-serif;
+
+font-weight:800;
+
+letter-spacing:10px;
+
+text-transform:uppercase;
+
+margin-bottom:10px;
+
+}
+
+.window-content h2{
+
+font-size:34px;
+
+font-family:'Cormorant Garamond',serif;
+
+font-weight:500;
+
+margin-bottom:28px;
+
+}
+
+.quote{
+
+font-size:21px;
+
+font-style:italic;
+
+opacity:.75;
+
+line-height:1.8;
+
+max-width:550px;
+
+margin:auto;
+
+}
+/* ===========================
+   BUTTONS
+=========================== */
+
+.buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:18px;
+
+margin-top:40px;
+
+flex-wrap:wrap;
+
+}
+
+.buttons a{
+
+text-decoration:none;
+
+color:white;
+
+padding:14px 30px;
+
+border-radius:999px;
+
+border:1px solid rgba(255,255,255,.18);
+
+background:rgba(255,255,255,.05);
+
+transition:.35s;
+
+letter-spacing:2px;
+
+font-size:14px;
+
+font-weight:700;
+
+}
+
+.buttons a:hover{
+
+background:white;
+
+color:black;
+
+transform:translateY(-4px);
+
+box-shadow:
+
+0 0 20px rgba(255,255,255,.35);
+
+}
+/* ===========================
+   SCRAPBOOK DECORATIONS
+=========================== */
+
+.decor{
+
+position:fixed;
+
+pointer-events:none;
+
+user-select:none;
+
+opacity:.18;
+
+z-index:-1;
+
+}
+
+.decor-star{
+
+top:120px;
+
+left:6%;
+
+font-size:55px;
+
+transform:rotate(-15deg);
+
+}
+
+.decor-heart{
+
+bottom:120px;
+
+right:8%;
+
+font-size:60px;
+
+transform:rotate(18deg);
+
+}
+
+.decor-cd{
+
+top:220px;
+
+right:12%;
+
+font-size:90px;
+
+animation:spin 16s linear infinite;
+
+}
+
+.decor-note{
+
+left:10%;
+
+bottom:180px;
+
+font-size:42px;
+
+}
+
+.decor-film{
+
+position:fixed;
+
+left:0;
+
+top:0;
+
+height:100vh;
+
+width:80px;
+
+background:
+
+repeating-linear-gradient(
+
+to bottom,
+
+white 0px,
+
+white 24px,
+
+transparent 24px,
+
+transparent 48px
+
+);
+
+opacity:.05;
+
+}
+
+@keyframes spin{
+
+from{
+
+transform:rotate(0deg);
+
+}
+
+to{
+
+transform:rotate(360deg);
+
+}
+
+}
+/* ===========================
+   NOW PLAYING
+=========================== */
+
+.player{
+
+padding:30px 20px 90px;
+
+display:flex;
+
+justify-content:center;
+
+}
+
+.player-box{
+
+width:100%;
+
+max-width:700px;
+
+background:rgba(255,255,255,.06);
+
+border:1px solid rgba(255,255,255,.15);
+
+border-radius:22px;
+
+overflow:hidden;
+
+backdrop-filter:blur(15px);
+
+box-shadow:0 0 25px rgba(255,255,255,.06);
+
+}
+
+.player-top{
+
+padding:14px 22px;
+
+background:rgba(255,255,255,.08);
+
+letter-spacing:3px;
+
+font-size:12px;
+
+font-weight:700;
+
+}
+
+.player-body{
+
+padding:35px;
+
+text-align:center;
+
+}
+
+.player-body h3{
+
+font-size:32px;
+
+margin-bottom:10px;
+
+font-family:'Cormorant Garamond',serif;
+
+}
+
+.player-body p{
+
+opacity:.75;
+
+margin-bottom:28px;
+
+}
+
+.artist-list{
+
+display:flex;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+gap:12px;
+
+margin-bottom:35px;
+
+}
+
+.artist-list span{
+
+padding:10px 18px;
+
+border-radius:999px;
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.15);
+
+transition:.3s;
+
+}
+
+.artist-list span:hover{
+
+background:white;
+
+color:black;
+
+}
+
+.spotify-link{
+
+display:inline-block;
+
+padding:14px 30px;
+
+border-radius:999px;
+
+background:white;
+
+color:black;
+
+font-weight:bold;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.spotify-link:hover{
+
+transform:translateY(-4px);
+
+}
+/* ===========================
+   QUICK INFO
+=========================== */
+
+.info{
+
+padding:80px 8%;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+gap:22px;
+
+}
+
+.card{
+
+background:rgba(255,255,255,.06);
+
+border:1px solid rgba(255,255,255,.15);
+
+border-radius:22px;
+
+padding:28px;
+
+backdrop-filter:blur(15px);
+
+transition:.35s;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.card::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:4px;
+
+background:white;
+
+opacity:.35;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 0 25px rgba(255,255,255,.15);
+
+}
+
+.card h3{
+
+font-size:22px;
+
+margin-bottom:14px;
+
+font-family:'Cormorant Garamond',serif;
+
+letter-spacing:1px;
+
+}
+
+.card p{
+
+font-size:15px;
+
+line-height:1.8;
+
+opacity:.85;
+
+}
+/* ===========================
+   CURRENTLY WIDGET
+=========================== */
+
+.status{
+
+padding:40px 8% 100px;
+
+display:flex;
+
+justify-content:center;
+
+}
+
+.status-box{
+
+width:100%;
+
+max-width:650px;
+
+background:rgba(255,255,255,.06);
+
+border:1px solid rgba(255,255,255,.15);
+
+border-radius:22px;
+
+backdrop-filter:blur(18px);
+
+padding:30px;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.status-box::before{
+
+content:"CURRENTLY";
+
+position:absolute;
+
+top:18px;
+
+right:24px;
+
+font-size:11px;
+
+letter-spacing:3px;
+
+opacity:.35;
+
+}
+
+.status-box h2{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:34px;
+
+margin-bottom:22px;
+
+}
+
+.status-item{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:12px 0;
+
+border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.status-item:last-child{
+
+border-bottom:none;
+
+}
+
+.status-label{
+
+opacity:.65;
+
+letter-spacing:1px;
+
+}
+
+.status-value{
+
+font-weight:600;
+
+}
+
+.online{
+
+display:inline-block;
+
+width:10px;
+
+height:10px;
+
+background:white;
+
+border-radius:50%;
+
+margin-right:8px;
+
+animation:pulse 1.8s infinite;
+
+}
+
+@keyframes pulse{
+
+0%{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+50%{
+
+opacity:.35;
+
+transform:scale(1.5);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+}
+/* ===========================
+   LETTER
+=========================== */
+
+.letter{
+
+padding:80px 8% 100px;
+
+display:flex;
+
+justify-content:center;
+
+}
+
+.letter-paper{
+
+position:relative;
+
+max-width:760px;
+
+background:white;
+
+color:black;
+
+padding:60px;
+
+border-radius:10px;
+
+transform:rotate(-1deg);
+
+box-shadow:
+
+0 15px 40px rgba(0,0,0,.25);
+
+font-family:'Cormorant Garamond',serif;
+
+}
+
+.letter-paper h2{
+
+font-size:42px;
+
+margin-bottom:25px;
+
+}
+
+.letter-paper p{
+
+font-size:22px;
+
+line-height:2;
+
+white-space:pre-line;
+
+}
+
+/* Tape */
+
+.tape{
+
+position:absolute;
+
+width:120px;
+
+height:28px;
+
+background:rgba(255,255,255,.35);
+
+backdrop-filter:blur(3px);
+
+}
+
+.tape-left{
+
+top:-12px;
+
+left:40px;
+
+transform:rotate(-8deg);
+
+}
+
+.tape-right{
+
+top:-12px;
+
+right:40px;
+
+transform:rotate(10deg);
+
+}
+/* ===========================
+   ABOUT PAGE
+=========================== */
+
+.about-page{
+
+padding:170px 8% 100px;
+
+display:grid;
+
+grid-template-columns:340px 1fr;
+
+gap:40px;
+
+align-items:start;
+
+}
+
+/* ===========================
+   PROFILE CARD
+=========================== */
+
+.profile-card{
+
+background:rgba(255,255,255,.06);
+
+border:1px solid rgba(255,255,255,.15);
+
+border-radius:24px;
+
+padding:30px;
+
+backdrop-filter:blur(16px);
+
+text-align:center;
+
+position:sticky;
+
+top:120px;
+
+}
+
+.photo-placeholder{
+
+width:220px;
+
+height:260px;
+
+margin:auto;
+
+border-radius:18px;
+
+border:2px dashed rgba(255,255,255,.3);
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:18px;
+
+letter-spacing:3px;
+
+margin-bottom:25px;
+
+background:rgba(255,255,255,.04);
+
+}
+
+.profile-card h1{
+
+font-size:42px;
+
+letter-spacing:4px;
+
+font-family:'Syne',sans-serif;
+
+margin-bottom:8px;
+
+}
+
+.nickname{
+
+opacity:.7;
+
+margin-bottom:18px;
+
+letter-spacing:2px;
+
+}
+
+.bio{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:24px;
+
+line-height:1.6;
+
+}
+
+/* ===========================
+   RIGHT SIDE
+=========================== */
+
+.about-info{
+
+display:grid;
+
+gap:25px;
+
+}
+
+.about-box{
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.15);
+
+border-radius:22px;
+
+padding:28px;
+
+backdrop-filter:blur(14px);
+
+transition:.35s;
+
+}
+
+.about-box:hover{
+
+transform:translateY(-6px);
+
+box-shadow:0 0 25px rgba(255,255,255,.12);
+
+}
+
+.about-box h2{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:34px;
+
+margin-bottom:18px;
+
+}
+
+.about-box p{
+
+line-height:1.9;
+
+opacity:.85;
+
+}
+
+.about-box ul{
+
+padding-left:20px;
+
+line-height:2;
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:900px){
+
+.about-page{
+
+grid-template-columns:1fr;
+
+}
+
+.profile-card{
+
+position:relative;
+
+top:0;
+
+}
+
+.photo-placeholder{
+
+width:180px;
+
+height:220px;
+
+}
+
+}
+/* ===========================
+   LIBRARY PAGE
+=========================== */
+
+.library-page{
+
+padding:170px 8% 100px;
+
+}
+
+/* ---------- TITLE ---------- */
+
+.library-title{
+
+text-align:center;
+
+margin-bottom:60px;
+
+}
+
+.library-title h1{
+
+font-size:72px;
+
+font-family:'Syne',sans-serif;
+
+letter-spacing:8px;
+
+margin-bottom:18px;
+
+}
+
+.library-title p{
+
+font-size:20px;
+
+max-width:700px;
+
+margin:auto;
+
+opacity:.75;
+
+line-height:1.8;
+
+font-family:'Cormorant Garamond',serif;
+
+}
+
+/* ---------- GRID ---------- */
+
+.library-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:25px;
+
+}
+
+/* ---------- CARD ---------- */
+
+.library-card{
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.15);
+
+border-radius:22px;
+
+padding:30px;
+
+backdrop-filter:blur(16px);
+
+transition:.35s;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+/* White top accent */
+
+.library-card::before{
+
+content:"";
+
+position:absolute;
+
+left:0;
+
+top:0;
+
+width:100%;
+
+height:4px;
+
+background:white;
+
+opacity:.3;
+
+}
+
+.library-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 0 30px rgba(255,255,255,.12);
+
+}
+
+.library-card h2{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:30px;
+
+margin-bottom:18px;
+
+}
+
+.library-card p{
+
+line-height:1.9;
+
+opacity:.85;
+
+}
+
+/* ---------- MOBILE ---------- */
+
+@media(max-width:768px){
+
+.library-title h1{
+
+font-size:48px;
+
+letter-spacing:4px;
+
+}
+
+.library-title p{
+
+font-size:18px;
+
+}
+
+}
+/* ===========================
+   PLAYLIST PAGE
+=========================== */
+
+.playlist-page{
+
+padding:170px 8% 100px;
+
+}
+
+/* ===========================
+   TITLE
+=========================== */
+
+.playlist-title{
+
+text-align:center;
+
+margin-bottom:55px;
+
+}
+
+.playlist-title h1{
+
+font-family:'Syne',sans-serif;
+
+font-size:72px;
+
+letter-spacing:8px;
+
+margin-bottom:15px;
+
+}
+
+.playlist-title p{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:22px;
+
+opacity:.75;
+
+}
+
+/* ===========================
+   SPOTIFY BOX
+=========================== */
+
+.spotify-box{
+
+max-width:720px;
+
+margin:0 auto 60px;
+
+padding:35px;
+
+text-align:center;
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.15);
+
+border-radius:24px;
+
+backdrop-filter:blur(16px);
+
+}
+
+.spotify-box h2{
+
+font-size:36px;
+
+font-family:'Cormorant Garamond',serif;
+
+margin-bottom:12px;
+
+}
+
+.spotify-box p{
+
+line-height:1.8;
+
+opacity:.8;
+
+margin-bottom:30px;
+
+}
+
+.spotify-button{
+
+display:inline-block;
+
+padding:15px 34px;
+
+text-decoration:none;
+
+color:black;
+
+background:white;
+
+border-radius:999px;
+
+font-weight:bold;
+
+letter-spacing:2px;
+
+transition:.35s;
+
+}
+
+.spotify-button:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 0 25px rgba(255,255,255,.35);
+
+}
+
+/* ===========================
+   ARTIST GRID
+=========================== */
+
+.artist-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+gap:24px;
+
+}
+
+/* ===========================
+   ARTIST CARD
+=========================== */
+
+.artist-card{
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.15);
+
+border-radius:22px;
+
+padding:30px;
+
+backdrop-filter:blur(15px);
+
+transition:.35s;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.artist-card::before{
+
+content:"♪";
+
+position:absolute;
+
+top:18px;
+
+right:22px;
+
+font-size:28px;
+
+opacity:.18;
+
+}
+
+.artist-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 0 28px rgba(255,255,255,.12);
+
+}
+
+.artist-card h3{
+
+font-size:30px;
+
+margin-bottom:12px;
+
+font-family:'Cormorant Garamond',serif;
+
+}
+
+.artist-card p{
+
+opacity:.8;
+
+line-height:1.7;
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:768px){
+
+.playlist-title h1{
+
+font-size:48px;
+
+letter-spacing:4px;
+
+}
+
+.spotify-box{
+
+padding:25px;
+
+}
+
+}
+/* ===========================
+   SCRAPBOOK PAGE
+=========================== */
+
+.scrapbook-page{
+
+padding:170px 8% 100px;
+
+}
+
+.scrapbook-title{
+
+text-align:center;
+
+margin-bottom:60px;
+
+}
+
+.scrapbook-title h1{
+
+font-family:'Syne',sans-serif;
+
+font-size:72px;
+
+letter-spacing:8px;
+
+margin-bottom:15px;
+
+}
+
+.scrapbook-title p{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:22px;
+
+opacity:.75;
+
+}
+
+/* ===========================
+   SCRAP GRID
+=========================== */
+
+.scrap-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:35px;
+
+}
+
+/* ===========================
+   SCRAP CARD
+=========================== */
+
+.scrap-card{
+
+background:white;
+
+color:black;
+
+padding:30px;
+
+border-radius:12px;
+
+position:relative;
+
+transition:.35s;
+
+box-shadow:0 15px 30px rgba(0,0,0,.25);
+
+min-height:230px;
+
+}
+
+/* Fake Tape */
+
+.scrap-card::before{
+
+content:"";
+
+position:absolute;
+
+top:-12px;
+
+left:50%;
+
+transform:translateX(-50%) rotate(-3deg);
+
+width:90px;
+
+height:28px;
+
+background:rgba(255,255,255,.45);
+
+border:1px solid rgba(0,0,0,.05);
+
+}
+
+/* Random Rotation */
+
+.scrap-card:nth-child(odd){
+
+transform:rotate(-2deg);
+
+}
+
+.scrap-card:nth-child(even){
+
+transform:rotate(2deg);
+
+}
+
+.scrap-card:hover{
+
+transform:rotate(0deg) scale(1.04);
+
+}
+
+.scrap-card h3{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:30px;
+
+margin-bottom:15px;
+
+}
+
+.scrap-card p{
+
+line-height:1.9;
+
+font-size:16px;
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:768px){
+
+.scrapbook-title h1{
+
+font-size:48px;
+
+letter-spacing:4px;
+
+}
+
+.scrap-grid{
+
+gap:25px;
+
+}
+
+}
+/* ===========================
+   FAVORITES PAGE
+=========================== */
+
+.favorites-page{
+
+padding:170px 8% 100px;
+
+}
+
+.favorites-title{
+
+text-align:center;
+
+margin-bottom:60px;
+
+}
+
+.favorites-title h1{
+
+font-family:'Syne',sans-serif;
+
+font-size:72px;
+
+letter-spacing:8px;
+
+margin-bottom:15px;
+
+}
+
+.favorites-title p{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:22px;
+
+opacity:.75;
+
+}
+
+.favorites-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:24px;
+
+}
+
+.favorite-card{
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.15);
+
+border-radius:24px;
+
+padding:30px;
+
+backdrop-filter:blur(15px);
+
+transition:.35s;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.favorite-card::before{
+
+content:"★";
+
+position:absolute;
+
+top:18px;
+
+right:22px;
+
+font-size:28px;
+
+opacity:.15;
+
+}
+
+.favorite-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 0 28px rgba(255,255,255,.12);
+
+}
+
+.favorite-card h3{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:30px;
+
+margin-bottom:16px;
+
+}
+
+.favorite-card p{
+
+line-height:1.8;
+
+opacity:.85;
+
+}
+
+@media(max-width:768px){
+
+.favorites-title h1{
+
+font-size:48px;
+
+letter-spacing:4px;
+
+}
+
+}
+/* ===========================
+   FADE ANIMATIONS
+=========================== */
+
+.card,
+.pin,
+.artist-card,
+.library-card,
+.scrap-card,
+.favorite-card,
+.about-box,
+.player-box,
+.status-box,
+.letter-paper{
+
+opacity:0;
+
+transform:translateY(40px);
+
+transition:1s;
+
+}
+
+.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+/* ===========================
+   FLOATING STARS
+=========================== */
+
+.stars{
+
+position:fixed;
+
+inset:0;
+
+pointer-events:none;
+
+overflow:hidden;
+
+z-index:-2;
+
+}
+
+.stars::before{
+
+content:"✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦";
+
+position:absolute;
+
+left:-20%;
+
+top:20%;
+
+font-size:24px;
+
+opacity:.08;
+
+animation:starsMove 30s linear infinite;
+
+letter-spacing:70px;
+
+}
+
+@keyframes starsMove{
+
+from{
+
+transform:translateX(0);
+
+}
+
+to{
+
+transform:translateX(120vw);
+
+}
+
+}
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#050505;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:white;
+
+border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+background:#d9d9d9;
+
+}
+::selection{
+
+background:white;
+
+color:black;
+
+}
+.profile-photo{
+
+width:220px;
+
+height:260px;
+
+object-fit:cover;
+
+border-radius:18px;
+
+margin-bottom:25px;
+
+filter:grayscale(100%);
+
+border:2px solid rgba(255,255,255,.15);
+
+}
+.pinned{
+    display:none;
+}
